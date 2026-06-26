@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+
+# Models, weights, adapters, merges (never commit large binaries)
+*.gguf
+*.safetensors
+*.bin
+*.pt
+*.pth
+models/
+weights/
+adapters/
+merges/
+
+# World state / runs / logs (regenerable simulation data)
+*.sqlite
+*.sqlite3
+*.db
+runs/
+logs/
+checkpoints/
+phylogeny/
+
+# Secrets & local config
+.env
+*.local
+config.local.*
+secrets/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

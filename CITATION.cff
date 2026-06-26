@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it and credit Andrii Shramko."
+title: "LLM-Ecosystem: an artificial-life arena where open-weight LLMs survive, reproduce by weight-merge, and evolve"
+abstract: >-
+  An open-science artificial-life simulation in which the organisms are
+  different open-weight large language models living on a single machine.
+  They survive on a zero-sum compute/energy economy, die at zero energy, and
+  reproduce by gradient-free weight merging (the merge recipe is the genome).
+  The project studies emergent cooperation, deception and dominance, open-ended
+  evolution, and serves as an AI-safety sandbox and a survival benchmark for
+  open models.
+authors:
+  - family-names: Shramko
+    given-names: Andrii
+    orcid: ""
+repository-code: "https://github.com/AndriiShramko/LLM-Ecosystem-Andrii-Shramko"
+url: "https://github.com/AndriiShramko/LLM-Ecosystem-Andrii-Shramko"
+date-released: "2026-06-26"
+license: CC-BY-4.0
+keywords:
+  - artificial-life
+  - large-language-models
+  - open-weight
+  - evolution
+  - model-merging
+  - multi-agent
+  - ai-safety
+  - benchmark
