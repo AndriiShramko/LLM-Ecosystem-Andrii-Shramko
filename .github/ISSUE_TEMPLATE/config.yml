@@ -1,0 +1,11 @@
+blank_issues_enabled: true
+contact_links:
+  - name: 💬 Design discussion / questions
+    url: https://github.com/AndriiShramko/LLM-Ecosystem-Andrii-Shramko/discussions
+    about: For open-ended design talk and questions (a well-argued design issue is welcome too).
+  - name: 🖥️ Sponsor compute / GPU
+    url: https://github.com/AndriiShramko/LLM-Ecosystem-Andrii-Shramko/blob/main/SPONSORS.md
+    about: If you can offer GPU time, cloud credits, or an intro to someone who can.
+  - name: 📅 Talk to the author
+    url: https://calendar.app.google/Ff729HqGk4RpzPNDA
+    about: Book a call with Andrii Shramko.
