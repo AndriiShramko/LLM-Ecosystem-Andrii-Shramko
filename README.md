@@ -161,6 +161,7 @@ Please keep the attribution if you fork or build on the concept.
 
 ## Documentation
 
+- **[docs/ROADMAP.md](docs/ROADMAP.md)** — the build plan: phases, what you'll *see* in the browser each step, the ring-test, how "done" is proven.
 - **[docs/ARCHITECTURE.md](docs/ARCHITECTURE.md)** — the 9 layers in full.
 - **[docs/RULES.md](docs/RULES.md)** — world rules: energy, metabolism, merge/heredity, death, niches.
 - **[docs/BUILD.md](docs/BUILD.md)** — set up and run the MVP (lands as it's built).
