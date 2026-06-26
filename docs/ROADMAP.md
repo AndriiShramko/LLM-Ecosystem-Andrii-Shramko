@@ -2,10 +2,14 @@
 
 > **Honest status: this is a build-in-public project. Design ≠ working.** Every phase is "done" only when you can open a URL, see the promised picture, watch the `/status` traffic-light show `N/N 🟢`, and the owner has signed off. Nothing is "done" because code exists.
 
+> 🔄 **2026-06-26 — plan under revision (v2 incoming).** This roadmap was stress-tested by a panel of domain specialists + adversarial critics. They found ~55 corrections and a few critical open questions (chiefly: *we must first prove that merge-based evolution actually improves fitness — not just produces a slideshow of merges* — before building the showcase). The **stack and several phases have changed** (see "Stack" and notes below). Treat phases as a direction, not a contract, until v2 lands. A few decisions (genome representation, the always-on world's hosting/cost, whether organisms tweet publicly at all) are still being made.
+
 **What it is:** Artificial life where organisms = different open-weight LLMs living on one machine. Reproduction = merging model weights (mergekit; the merge recipe is the "genome"). Metabolism is proportional to model size; an organism dies when its energy hits zero. A digital aquarium of AI critters — for everyone — with a deep lab view for AI engineers.
 
-## Stack (2026)
-Next.js 16 (React 19.2) · PixiJS v8 (WebGPU 2D aquarium) · FastAPI + Server-Sent Events bridge · Redis Streams event bus · Zustand + TanStack Query · uPlot + visx charts · Playwright (visual ring-tests) · Docker Compose. 3D Gaussian-Splatting view (Spark.js 2.0 + React Three Fiber) is deferred to a later, optional attraction phase.
+## Stack (2026, revised after vetting)
+**Vite + React** (SPA; lighter than Next.js, and the public Phase-7 view is a separate static build for a smaller attack surface) · **PixiJS v8 with WebGL2 by default** (WebGPU is an opt-in toggle, not the default — it can render a black first frame on some drivers) · vanilla PixiJS (not `@pixi/react`) for the aquarium · **FastAPI + Server-Sent Events** bridge · Redis Streams (added once the engine becomes its own container, not on day one) · Zustand for live state · uPlot charts · Playwright (visual ring-tests) · Docker Compose (GPU via NVIDIA Container Toolkit; on Windows this means the WSL2 backend). 3D Gaussian-Splatting (Spark.js 2.0) stays out of v1.0 — an optional later attraction, not a promise.
+
+> Honest cost note: the *core simulation* runs locally at near-zero cash cost, but it is **not literally $0** — the social/tweets layer uses the paid X API (~$0.20/post; no free tier as of Feb 2026) and a continuously-running world draws real electricity. Real figures are being worked out per hosting mode.
 
 ## Two views, one app
 A single toggle **[👁 Spectator | 🔬 Expert]** switches *depth*, not data:
